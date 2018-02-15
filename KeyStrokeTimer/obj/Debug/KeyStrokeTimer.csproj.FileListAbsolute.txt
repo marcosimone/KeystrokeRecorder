@@ -1,0 +1,12 @@
+c:\users\simonem\documents\visual studio 2015\Projects\KeyStrokeTimer\KeyStrokeTimer\bin\Debug\KeyStrokeTimer.exe.config
+c:\users\simonem\documents\visual studio 2015\Projects\KeyStrokeTimer\KeyStrokeTimer\bin\Debug\KeyStrokeTimer.exe
+c:\users\simonem\documents\visual studio 2015\Projects\KeyStrokeTimer\KeyStrokeTimer\bin\Debug\KeyStrokeTimer.pdb
+c:\users\simonem\documents\visual studio 2015\Projects\KeyStrokeTimer\KeyStrokeTimer\obj\Debug\KeyStrokeTimer.csprojResolveAssemblyReference.cache
+c:\users\simonem\documents\visual studio 2015\Projects\KeyStrokeTimer\KeyStrokeTimer\obj\Debug\KeyStrokeTimer.Form1.resources
+c:\users\simonem\documents\visual studio 2015\Projects\KeyStrokeTimer\KeyStrokeTimer\obj\Debug\KeyStrokeTimer.Properties.Resources.resources
+c:\users\simonem\documents\visual studio 2015\Projects\KeyStrokeTimer\KeyStrokeTimer\obj\Debug\KeyStrokeTimer.csproj.GenerateResource.Cache
+c:\users\simonem\documents\visual studio 2015\Projects\KeyStrokeTimer\KeyStrokeTimer\obj\Debug\KeyStrokeTimer.exe
+c:\users\simonem\documents\visual studio 2015\Projects\KeyStrokeTimer\KeyStrokeTimer\obj\Debug\KeyStrokeTimer.pdb
+C:\Users\simonem\Documents\Visual Studio 2015\Projects\KeystrokeRecorder\KeyStrokeTimer\bin\Debug\KeyStrokeTimer.exe.config
+C:\Users\simonem\Documents\Visual Studio 2015\Projects\KeystrokeRecorder\KeyStrokeTimer\obj\Debug\KeyStrokeTimer.exe
+C:\Users\simonem\Documents\Visual Studio 2015\Projects\KeystrokeRecorder\KeyStrokeTimer\obj\Debug\KeyStrokeTimer.pdb
