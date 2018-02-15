@@ -27,11 +27,11 @@
             this.splitContainer2 = new System.Windows.Forms.SplitContainer();
             this.textBoxInput = new System.Windows.Forms.TextBox();
             this.textBoxOutput = new System.Windows.Forms.TextBox();
-            this.buttonReplay = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.labelInfo = new System.Windows.Forms.Label();
             this.buttonExport = new System.Windows.Forms.Button();
+            this.labelInfo = new System.Windows.Forms.Label();
+            this.buttonReplay = new System.Windows.Forms.Button();
+            this.buttonReset = new System.Windows.Forms.Button();
+            this.buttonStart = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -58,8 +58,8 @@
             this.splitContainer1.Panel2.Controls.Add(this.buttonExport);
             this.splitContainer1.Panel2.Controls.Add(this.labelInfo);
             this.splitContainer1.Panel2.Controls.Add(this.buttonReplay);
-            this.splitContainer1.Panel2.Controls.Add(this.button2);
-            this.splitContainer1.Panel2.Controls.Add(this.button1);
+            this.splitContainer1.Panel2.Controls.Add(this.buttonReset);
+            this.splitContainer1.Panel2.Controls.Add(this.buttonStart);
             this.splitContainer1.Size = new System.Drawing.Size(896, 443);
             this.splitContainer1.SplitterDistance = 337;
             this.splitContainer1.TabIndex = 0;
@@ -93,7 +93,6 @@
             this.textBoxInput.Size = new System.Drawing.Size(436, 337);
             this.textBoxInput.TabIndex = 0;
             this.textBoxInput.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxInput_KeyPress);
-            this.textBoxInput.PreviewKeyDown += new System.Windows.Forms.PreviewKeyDownEventHandler(this.textBoxInput_PreviewKeyDown);
             // 
             // textBoxOutput
             // 
@@ -105,6 +104,24 @@
             this.textBoxOutput.Size = new System.Drawing.Size(456, 337);
             this.textBoxOutput.TabIndex = 0;
             // 
+            // buttonExport
+            // 
+            this.buttonExport.Location = new System.Drawing.Point(809, 67);
+            this.buttonExport.Name = "buttonExport";
+            this.buttonExport.Size = new System.Drawing.Size(75, 23);
+            this.buttonExport.TabIndex = 4;
+            this.buttonExport.Text = "Export";
+            this.buttonExport.UseVisualStyleBackColor = true;
+            this.buttonExport.Click += new System.EventHandler(this.buttonExport_Click);
+            // 
+            // labelInfo
+            // 
+            this.labelInfo.AutoSize = true;
+            this.labelInfo.Location = new System.Drawing.Point(13, 14);
+            this.labelInfo.Name = "labelInfo";
+            this.labelInfo.Size = new System.Drawing.Size(0, 13);
+            this.labelInfo.TabIndex = 3;
+            // 
             // buttonReplay
             // 
             this.buttonReplay.Location = new System.Drawing.Point(411, 5);
@@ -115,43 +132,25 @@
             this.buttonReplay.UseVisualStyleBackColor = true;
             this.buttonReplay.Click += new System.EventHandler(this.buttonReplay_Click);
             // 
-            // button2
+            // buttonReset
             // 
-            this.button2.Location = new System.Drawing.Point(411, 63);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "Reset";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.buttonReset.Location = new System.Drawing.Point(411, 63);
+            this.buttonReset.Name = "buttonReset";
+            this.buttonReset.Size = new System.Drawing.Size(75, 23);
+            this.buttonReset.TabIndex = 1;
+            this.buttonReset.Text = "Reset";
+            this.buttonReset.UseVisualStyleBackColor = true;
+            this.buttonReset.Click += new System.EventHandler(this.buttonReset_Click);
             // 
-            // button1
+            // buttonStart
             // 
-            this.button1.Location = new System.Drawing.Point(379, 34);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(138, 23);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Start";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // labelInfo
-            // 
-            this.labelInfo.AutoSize = true;
-            this.labelInfo.Location = new System.Drawing.Point(13, 14);
-            this.labelInfo.Name = "labelInfo";
-            this.labelInfo.Size = new System.Drawing.Size(0, 13);
-            this.labelInfo.TabIndex = 3;
-            // 
-            // buttonExport
-            // 
-            this.buttonExport.Location = new System.Drawing.Point(809, 67);
-            this.buttonExport.Name = "buttonExport";
-            this.buttonExport.Size = new System.Drawing.Size(75, 23);
-            this.buttonExport.TabIndex = 4;
-            this.buttonExport.Text = "Export";
-            this.buttonExport.UseVisualStyleBackColor = true;
-            this.buttonExport.Click += new System.EventHandler(this.buttonExport_Click);
+            this.buttonStart.Location = new System.Drawing.Point(379, 34);
+            this.buttonStart.Name = "buttonStart";
+            this.buttonStart.Size = new System.Drawing.Size(138, 23);
+            this.buttonStart.TabIndex = 0;
+            this.buttonStart.Text = "Start";
+            this.buttonStart.UseVisualStyleBackColor = true;
+            this.buttonStart.Click += new System.EventHandler(this.buttonStart_Click);
             // 
             // Main
             // 
@@ -182,8 +181,8 @@
         private System.Windows.Forms.SplitContainer splitContainer2;
         private System.Windows.Forms.TextBox textBoxInput;
         private System.Windows.Forms.TextBox textBoxOutput;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button buttonStart;
+        private System.Windows.Forms.Button buttonReset;
         private System.Windows.Forms.Button buttonReplay;
         private System.Windows.Forms.Label labelInfo;
         private System.Windows.Forms.Button buttonExport;

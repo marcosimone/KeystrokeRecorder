@@ -1,13 +1,6 @@
 ﻿using System;
 using System.Collections;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
 using System.Threading;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace KeyStrokeTimer {
@@ -22,9 +15,9 @@ namespace KeyStrokeTimer {
             textBoxInput.Enabled = false;
         }
 
-        private void button1_Click(object sender, EventArgs e) {
+        private void buttonStart_Click(object sender, EventArgs e) {
             running = !running;
-            button1.Text = running ? "Stop" : "Start";
+            buttonStart.Text = running ? "Stop" : "Start";
             if (running) {
                 textBoxInput.Enabled = true;
                 textBoxInput.Focus();
@@ -40,7 +33,7 @@ namespace KeyStrokeTimer {
             }
         }
 
-        private void button2_Click(object sender, EventArgs e) {
+        private void buttonReset_Click(object sender, EventArgs e) {
             stopwatch.Reset();
             textBoxInput.Clear();
             textBoxOutput.Clear();
@@ -48,20 +41,7 @@ namespace KeyStrokeTimer {
             keypress.Clear();
         }
 
-        private void textBoxInput_PreviewKeyDown(object sender, PreviewKeyDownEventArgs e) {
-            //look for backspace
-        }
-
-        private void textBoxInput_KeyDown(object sender, KeyEventArgs e) {
-            //handle shift down
-        }
-
-        private void textBoxInput_KeyUp(object sender, KeyEventArgs e) {
-            //handle shift up
-        }
-
         private void textBoxInput_KeyPress(object sender, KeyPressEventArgs e) {
-            //if not backspace
             keypress.Add((int)e.KeyChar);
             delay.Add((int)stopwatch.ElapsedMilliseconds);
             stopwatch.Restart();
@@ -75,18 +55,17 @@ namespace KeyStrokeTimer {
                 ch = (int)(keypress[i]);
                 d = (int)delay[i];
                 Thread.Sleep(d);
-                if (ch == 8 && textBoxOutput.TextLength > 0) {
+                if (ch == 8 && textBoxOutput.TextLength > 0) { //delete last key for backspace
                     textBoxOutput.Text = textBoxOutput.Text.Substring(0, textBoxOutput.TextLength - 1);
 
-                }else if(ch == 13) {
+                }else if(ch == 13) { //newline for enter
                     textBoxOutput.AppendText("\n");
 
                 } else {
                     textBoxOutput.AppendText((char)ch + "");
                 }
-   
+                //force application to update ui after every action so it appears more natural
                 Application.DoEvents();
-
             }
         }
 
