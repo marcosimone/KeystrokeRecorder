@@ -31,6 +31,7 @@
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.labelInfo = new System.Windows.Forms.Label();
+            this.buttonExport = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -54,6 +55,7 @@
             // 
             // splitContainer1.Panel2
             // 
+            this.splitContainer1.Panel2.Controls.Add(this.buttonExport);
             this.splitContainer1.Panel2.Controls.Add(this.labelInfo);
             this.splitContainer1.Panel2.Controls.Add(this.buttonReplay);
             this.splitContainer1.Panel2.Controls.Add(this.button2);
@@ -141,6 +143,16 @@
             this.labelInfo.Size = new System.Drawing.Size(0, 13);
             this.labelInfo.TabIndex = 3;
             // 
+            // buttonExport
+            // 
+            this.buttonExport.Location = new System.Drawing.Point(809, 67);
+            this.buttonExport.Name = "buttonExport";
+            this.buttonExport.Size = new System.Drawing.Size(75, 23);
+            this.buttonExport.TabIndex = 4;
+            this.buttonExport.Text = "Export";
+            this.buttonExport.UseVisualStyleBackColor = true;
+            this.buttonExport.Click += new System.EventHandler(this.buttonExport_Click);
+            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -174,6 +186,7 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button buttonReplay;
         private System.Windows.Forms.Label labelInfo;
+        private System.Windows.Forms.Button buttonExport;
     }
 }
 

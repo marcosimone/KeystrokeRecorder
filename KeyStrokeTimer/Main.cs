@@ -89,5 +89,12 @@ namespace KeyStrokeTimer {
 
             }
         }
+
+        private void buttonExport_Click(object sender, EventArgs e) {
+            textBoxOutput.Clear();
+            textBoxOutput.Text = "keys = { " + String.Join(", ", keypress.ToArray()) + " }" + 
+                               "\n\n\ndelays = { " + String.Join(", ", delay.ToArray()) + " }";
+            //{1, 2, 3}
+        }
     }
 }
